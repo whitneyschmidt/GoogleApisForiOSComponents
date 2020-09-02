@@ -47,9 +47,6 @@
     <None Include="..\..\..\externals\GoogleDataTransport.framework\GoogleDataTransport">
       <Link>GoogleDataTransport.framework</Link>
     </None>
-    <None Include="..\..\..\externals\GoogleDataTransportCCTSupport.framework\GoogleDataTransportCCTSupport">
-      <Link>GoogleDataTransportCCTSupport.framework</Link>
-    </None>
     <None Include="..\..\..\externals\GoogleToolboxForMac.framework\GoogleToolboxForMac">
       <Link>GoogleToolboxForMac.framework</Link>
     </None>
@@ -97,13 +94,6 @@
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
       <ForceLoad>True</ForceLoad>
-      <Frameworks>SystemConfiguration CoreTelephony</Frameworks>
-    </NativeReference>
-    <NativeReference Include="..\..\..\externals\GoogleDataTransportCCTSupport.framework">
-      <Kind>Framework</Kind>
-      <SmartLink>True</SmartLink>
-      <ForceLoad>True</ForceLoad>
-      <LinkerFlags>-lz</LinkerFlags>
       <Frameworks>SystemConfiguration CoreTelephony</Frameworks>
     </NativeReference>
     <NativeReference Include="..\..\..\externals\GoogleToolboxForMac.framework">
