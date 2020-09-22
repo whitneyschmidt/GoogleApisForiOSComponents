@@ -149,7 +149,7 @@ void SetArtifactsPodSpecs ()
 		PodSpec.Create ("GTMSessionFetcher",              "1.4.0",    frameworkSource: FrameworkSource.Pods, subSpecs: new [] { "Full" }),
 		PodSpec.Create ("leveldb-library",                "1.22.0",   frameworkSource: FrameworkSource.Pods, frameworkName: "leveldb"),
 		PodSpec.Create ("nanopb",                         "1.30906.0", frameworkSource: FrameworkSource.Pods),
-		PodSpec.Create ("Protobuf",                       "3.13.0",   frameworkSource: FrameworkSource.Pods, frameworkName: "protobuf")
+		PodSpec.Create ("Protobuf",                       "3.13.0",   frameworkSource: FrameworkSource.Pods)
 	};
 	FIREBASE_CRASHLYTICS_ARTIFACT.PodSpecs = new [] {
 		PodSpec.Create ("Firebase", "6.31.1", frameworkSource: FrameworkSource.Pods, frameworkName: "FirebaseCrashlytics", targetName: "FirebaseCrashlytics", subSpecs: new [] { "Crashlytics" })
