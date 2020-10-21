@@ -137,19 +137,19 @@ void SetArtifactsPodSpecs ()
 	};
 	FIREBASE_CORE_ARTIFACT.PodSpecs = new [] {
 		PodSpec.Create ("Firebase",                       "6.22.0",   frameworkSource: FrameworkSource.Pods, frameworkName: "FirebaseCore", targetName: "FirebaseCore", subSpecs: new [] { "CoreOnly" }),
-		PodSpec.Create ("FirebaseAuthInterop",            "1.1.0",    frameworkSource: FrameworkSource.Pods, canBeBuild: false),
-		PodSpec.Create ("FirebaseAnalyticsInterop",       "1.5.0",    frameworkSource: FrameworkSource.Pods, canBeBuild: false),
-		PodSpec.Create ("FirebaseCoreDiagnostics",        "1.2.3",    frameworkSource: FrameworkSource.Pods),
+		/* ok */ PodSpec.Create ("FirebaseAuthInterop",            "1.1.0",    frameworkSource: FrameworkSource.Pods, canBeBuild: false),
+		/* ok */ PodSpec.Create ("FirebaseAnalyticsInterop",       "1.5.0",    frameworkSource: FrameworkSource.Pods, canBeBuild: false),
+		/* max bod */ PodSpec.Create ("FirebaseCoreDiagnostics",        "1.4.0",    frameworkSource: FrameworkSource.Pods),
 		PodSpec.Create ("FirebaseCoreDiagnosticsInterop", "1.2.0",    frameworkSource: FrameworkSource.Pods, canBeBuild: false),
 		PodSpec.Create ("GoogleAPIClientForREST",         "1.3.7",    frameworkSource: FrameworkSource.Pods, subSpecs: new [] { "Vision" }, useDefaultSubspecs: true),
 		PodSpec.Create ("GoogleAppMeasurement",           "6.4.0"),
-		PodSpec.Create ("GoogleDataTransport",            "5.1.1",    frameworkSource: FrameworkSource.Pods),
-		PodSpec.Create ("GoogleDataTransportCCTSupport",  "2.0.2",    frameworkSource: FrameworkSource.Pods),
+		/* max bod */ PodSpec.Create ("GoogleDataTransport",            "6.1.0",    frameworkSource: FrameworkSource.Pods),
+		/* max 3.2.0, limiting factor */ PodSpec.Create ("GoogleDataTransportCCTSupport",  "3.2.0",    frameworkSource: FrameworkSource.Pods),
 		PodSpec.Create ("GoogleToolboxForMac",            "2.2.2",    frameworkSource: FrameworkSource.Pods, subSpecs: new [] { "NSData+zlib", "NSDictionary+URLArguments", "Logger", "StringEncoding", "URLBuilder" }),
 		PodSpec.Create ("GoogleUtilities",                "6.5.2",    frameworkSource: FrameworkSource.Pods, subSpecs: new [] { "AppDelegateSwizzler", "Environment", "ISASwizzler", "Logger", "MethodSwizzler", "Network", "NSData+zlib", "Reachability", "UserDefaults" }),
 		PodSpec.Create ("GTMSessionFetcher",              "1.3.1",    frameworkSource: FrameworkSource.Pods, subSpecs: new [] { "Full" }),
 		PodSpec.Create ("leveldb-library",                "1.22.0",   frameworkSource: FrameworkSource.Pods, frameworkName: "leveldb"),
-		PodSpec.Create ("nanopb",                         "0.3.9011", frameworkSource: FrameworkSource.Pods),
+		/* max bod */ PodSpec.Create ("nanopb",                         "1.30905.0", frameworkSource: FrameworkSource.Pods),
 		PodSpec.Create ("Protobuf",                       "3.11.4",   frameworkSource: FrameworkSource.Pods, frameworkName: "protobuf")
 	};
 	FIREBASE_CRASHLYTICS_ARTIFACT.PodSpecs = new [] {
